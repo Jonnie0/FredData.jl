@@ -144,7 +144,7 @@ function validate_args!(kwargs)
     end
     # units
     if (v = pop!(d, :units, nothing)) != nothing &&
-        v ∉ ["lin", "chg", "ch1", "pch", "pc1", "pca", "cch", "log"]
+        v ∉ ["lin", "chg", "ch1", "pch", "pc1", "pca", "cch", "log", "cca"]
             error("units: Invalid format: $v")
     end
     # frequency
